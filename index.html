@@ -3,6 +3,8 @@
 <head>
 <title>ToDo-List</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="javascript.js"></script>
+
 </head>
 <body>
 
@@ -14,12 +16,12 @@
         <div class="add-list">
             <div>
                 <input class="input-task" type="text" placeholder="add a task">
-                <button class="add-button" >Add</button>
+                <button class="add-button" onclick="addTask()" >Add</button>
             </div>   
         </div>
             
         <div class="task-list">
-            <ul>
+            <ul id="list">
                 <li>
                     <div>Task1</div>
                     <span>&#x2A09;</span>
