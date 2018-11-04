@@ -87,3 +87,11 @@ html, body {
     text-align: center;
     margin-right: 5vh;    
 }
+
+.toggle{
+    text-decoration: line-through;
+}
+
+.hide{
+    display: none !important;
+}

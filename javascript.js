@@ -20,7 +20,22 @@ addToList = function(task){
 
     let list = document.getElementById("list");
 
-    list.appendChild(listItem);
-    
+    list.addEventListener("click", eventListener);
 
+    list.appendChild(listItem);
+}
+
+eventListener = function(event){
+    let target = event.target;
+    if (target.tagName === 'DIV'){
+        if (target.classList.contains('toggle')){
+            target.classList.remove('toggle');
+        }else{
+            target.classList.add('toggle');
+        }
+    }else if (target.tagName === 'SPAN'){
+        target.parentNode.classList.add('hide');
+    }else{
+        return;
+    }
 }
